@@ -2,66 +2,113 @@
 <html>
 <head>
 	<title>form</title>
+	<style> 
+		#main{
+			margin-left: 20%;
+			margin-top: 5%;
+			
+		}
+		#first{
+			float: left;
+			margin-right: 30px;	
+			
+		}
+		#finner{
+			margin-bottom: 18px;
+		}
+		#sinner{
+			margin-bottom: 7px;
+		}
+		#new{
+			clear:both;
+		}
+		#new_inner{
+			margin-bottom: 10px;
+			padding-bottom: 5px;
+		}
+
+	</style>
 </head>
 <body>
-	<form>
-		<table style="margin-top: 100px;" align="center" >
-		
-			<tr>
-				<td>
-					<label>Name:</label>
-				</td>
-				<td>
-					<input type="text" name="name">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<label>Address:</label>
-				</td>
-				<td><input type="text" name="Address"></td>
-			</tr>
-			<tr>
-				<td><label>City:</label></td>
-				<td><input type="text" name="city"></td>
-			</tr>
-			<tr>
-				<td><label>State:</label></td>
-				<td><input type="text" name="State"></td>
-			</tr>
-			<tr> 
-				<td><label>Zip:</label></td>
-				<td><input type="text" name="Zip"></td>
-				
-			</tr>
-			<tr>
-				<td><label>Magazine:</label></td>
-				<td><select name="Magazine"><option value="PC WOrld">PC World</option>
+<div id="main">
+	
+		<div id="first">
+			<div id="finner">
+			<label>Name:</label>				
+			</div>
+			<div id="finner">
+				<label>Address:</label>
+			</div>
+			<div id="finner">
+				<label>City:</label>
+			</div id="finner">
+			<div id="finner">
+				<label>State:</label>
+			</div>
+			<div id="finner">
+				<label>Zip:</label>
+			</div>
+			<div id="finner">
+				<label>Magazine:</label>
+			</div id="finner">
+			<div id="finner">
+				<label>Subscription:</label>
+			</div>
+			
+
+		</div>
+
+		<div id="second">
+		<div id="sinner">
+			<input type="text" name="name">
+		</div>
+		<div id="sinner">
+			<input type="text" name="Address">
+		</div>
+		<div id="sinner">
+			<input type="text" name="City">
+		</div>
+		<div id="sinner">
+			<input type="text" name="State">
+		</div>
+		<div id="sinner">
+			<input type="text" name="Zip">	
+		</div>
+		<div>
+			<select name="Magazine"><option value="PC WOrld">PC World</option>
   				<option value="PC1 WOrld">PC1 WOrld</option>
   				<option value="PC2 WOrld">PC2 WOrld</option>
-  				<option value="PC3 WOrld">PC3 WOrld</option></select></td>
+				<option value="PC3 WOrld">PC3 WOrld</option></select>
+		</div>
+		<div>
+			<input type="radio" name="Subscription" value="1_year " checked="">1 year<input type="radio" name="Subscription" value="2_year">2 year
+		</div>
+		<div>
+			<br>
+		</div>
+		
+								
+		</div>
 
-			</tr>
-			<tr>
-				<td><label>Subscription</label></td>
-				<td><input type="radio" name="Subscription" value="1_year " checked="">1 year
-				<input type="radio" name="Subscription" value="2_year">2 year</td>
-				<!-- <td><input type="radio" name="Subscription" value="2_year">2 year</td> -->
-			</tr>
-			<tr>
-				<td colspan="2"><label>Additional Comments:</label></td>
-			</tr>
-			<tr>
-				<td colspan="2">
+
+		<div id="new">
+			<div id="new_inner">
+				<label>Additional Comments:</label>
+				</div>
+				<div id="new_inner">
 					<textarea rows="3" cols="60"></textarea>
-				</td>
-			</tr>
-			<tr>
-				<td><button name="Subscription"> Send Your Order</button></td>
-			</tr>
+				</div>
+				<div id="new_inner">
+					<button name="Subscription"> Send Your Order</button>
+				</div>
+			</div>
+		</div>
 
-		</table>
+		
 
-	</form>
+	
+</div>
+
+
 </body>
 </html>
